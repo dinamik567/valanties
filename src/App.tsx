@@ -47,7 +47,7 @@ function App() {
 
         fetchData()
 
-    }, [searchValue]);
+    }, [param, searchValue]);
 
     const transformedArray = useMemo(() => {
         return transformTo2DArray(arrayId, 50);
