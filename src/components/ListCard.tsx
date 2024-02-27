@@ -9,7 +9,6 @@ interface ListCardProps {
 const ListCardComponent = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(150px, 250px));
-
   justify-content: center;
   gap: 15px;
 `

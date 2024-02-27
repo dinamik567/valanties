@@ -4,3 +4,5 @@ export interface CardI {
     price: number;
     product: string;
 }
+
+export type Param = "product" | "brand" | "id" | "price"
