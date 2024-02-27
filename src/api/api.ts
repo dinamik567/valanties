@@ -10,7 +10,7 @@ const TOKEN = Md5.hashStr(`${PASSWORD}_${date}`)
 export async function filterCardsId(param: Param, value: string) {
     const correctValue = param === "price" ? parseInt(value) : value
     try {
-        const response = await fetch("http://api.valantis.store:40000/", {
+        const response = await fetch("https://api.valantis.store:41000/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export async function filterCardsId(param: Param, value: string) {
 
 export async function fetchCardsId() {
     try {
-        const response = await fetch("http://api.valantis.store:40000/", {
+        const response = await fetch("https://api.valantis.store:41000/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -65,7 +65,7 @@ export async function fetchCardsId() {
 
 export async function fetchCard(arrayId: string[]) {
     try {
-        const response = await fetch("http://api.valantis.store:40000/", {
+        const response = await fetch("https://api.valantis.store:41000/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
